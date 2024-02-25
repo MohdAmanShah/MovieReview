@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataModels
 {
-    public class ReviewModel
+    public class Review
     {
         [Key]
         public Guid Id { get; set; }
@@ -15,5 +15,6 @@ namespace DataModels
         public List<String> DownloadLinks { get; set; }
         public string Body { get; set; }
         public int Upvotes { get; set; }
+        public Movie Movie { get; set; }
     }
 }

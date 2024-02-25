@@ -14,5 +14,6 @@ namespace DataModels
         [Required]
         public string Name { get; set; }
         public string ImageUrl { get; set; }
+        public ICollection<Review> Reviews { get; set; }
     }
 }

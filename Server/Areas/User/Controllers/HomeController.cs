@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using DataModels;
 using System.Diagnostics;
 
-namespace Server.Controllers
+namespace Server.Areas.User.Controllers
 {
     public class HomeController : Controller
     {
