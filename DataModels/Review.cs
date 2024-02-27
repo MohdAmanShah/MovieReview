@@ -16,5 +16,6 @@ namespace DataModels
         public string Body { get; set; }
         public int Upvotes { get; set; }
         public Movie Movie { get; set; }
+        public ApplicationUser User { get; set; }
     }
 }

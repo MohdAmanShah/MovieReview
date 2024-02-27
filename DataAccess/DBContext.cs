@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 
 namespace DataAccess
 {
-    public class DBContext : IdentityDbContext
+    public class DBContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Review> Reviews { get; set; }
+        public DbSet<ApplicationUser> Users { get; set; }
         public DBContext(DbContextOptions<DBContext> options) : base(options)
         {
 
